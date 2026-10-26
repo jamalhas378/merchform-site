@@ -3,96 +3,286 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MerchForm: Print-Ready 3D Mockups</title>
-  <meta name="description" content="Put your artwork on a 3D garment, spin it, and export 4K product shots, 300 dpi print files and vertical videos. For streetwear brands and print-on-demand sellers.">
-  <meta name="color-scheme" content="light dark">
+  <title>MerchForm: 3D Merch Mockups for iPhone</title>
+  <meta name="description" content="Put your artwork on a 3D tee, hoodie or cap. Try real finishes like embroidery and puff, then export 4K product photos, 300 dpi print files and vertical videos. No photoshoot.">
+  <meta name="theme-color" content="#F5F1EA">
+  <meta property="og:title" content="MerchForm: 3D Merch Mockups for iPhone">
+  <meta property="og:description" content="Your design on a real 3D garment. Product photos, print files and videos, straight from your phone.">
+  <meta property="og:image" content="https://merchform.pages.dev/assets/hoodie-back.jpg">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="/">MerchForm</a>
       <nav>
-        <a href="/privacy">Privacy</a>
-        <a href="/support">Support</a>
+        <span class="nav-links">
+          <a href="#design">Design</a>
+          <a href="#finishes">Finishes</a>
+          <a href="#exports">Exports</a>
+          <a href="/support">Support</a>
+        </span>
+        <!-- TODO: App Store link (3 places on this page) -->
+        <a class="btn btn-ink btn-small" href="#">Get the app</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
+  <main>
+    <!-- ============ Hero ============ -->
     <section class="hero">
-      <div>
-        <h1>Your design on the garment, ready to sell.</h1>
-        <p class="lede">MerchForm puts your artwork on a 3D shirt, hoodie or cap. Spin it, try finishes and colours, then export product photos, print-ready files and videos without a photoshoot.</p>
-        <!-- TODO: replace href="#" with the App Store link once the app is live,
-             e.g. https://apps.apple.com/app/id0000000000 -->
-        <a class="store-button" href="#">Download on the App Store</a>
-        <p class="store-note">Free to download. For iPhone.</p>
-      </div>
-      <img class="shot" src="/assets/editor.jpg" width="506" height="1100" alt="A black oversized tee with a tiger print in the MerchForm editor">
-    </section>
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">3D mockups for iPhone</span>
+          <h1>Your merch, <em>real</em> before it&rsquo;s made.</h1>
+          <p class="lede">Put your artwork on a 3D tee, hoodie or cap. Spin it, try embroidery or puff, then export product photos, print-ready files and videos. No photoshoot, no laptop.</p>
+          <div class="hero-actions">
+            <!-- TODO: App Store link -->
+            <a class="btn btn-ember" href="#">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/></svg>
+              Download on the App Store
+            </a>
+            <a class="btn btn-ghost" href="#exports">See what it makes</a>
+          </div>
+          <p class="small hero-note">Free to download and design. iPhone, iOS 17 or later.</p>
+          <div class="pills">
+            <span class="pill">6 garments</span>
+            <span class="pill">8 finishes</span>
+            <span class="pill">300 dpi print files</span>
+            <span class="pill">No account</span>
+          </div>
+        </div>
 
-    <section class="section">
-      <h2>Made for merch that sells</h2>
-      <p class="lede">For small streetwear brands, print-on-demand sellers and anyone making merch.</p>
-      <div class="features">
-        <div class="feature">
-          <h3>Every side is printable</h3>
-          <p>Front, back and both sleeves, each with its own layers. Place, resize and rotate exactly where you want it.</p>
-        </div>
-        <div class="feature">
-          <h3>Six garments</h3>
-          <p>Oversized tee, hoodie, crewneck, long sleeve, henley and baseball cap, in any fabric colour.</p>
-        </div>
-        <div class="feature">
-          <h3>Real finishes</h3>
-          <p>See your design as print, puff, embroidery, chenille, foil, glitter, emboss or distressed.</p>
-        </div>
-        <div class="feature">
-          <h3>Your art, or ours</h3>
-          <p>Use your own photos, set type in eight fonts, or pick from a library of 89 recolourable pieces.</p>
-        </div>
-        <div class="feature">
-          <h3>Print-ready files</h3>
-          <p>A transparent 300 dpi PNG for every printed side, with its size and position, ready for your print shop.</p>
-        </div>
-        <div class="feature">
-          <h3>Photos and video</h3>
-          <p>4K product stills, vertical videos for Reels and TikTok, and a listing kit with every shot a product page needs.</p>
+        <div class="hero-visual reveal">
+          <figure class="float float-a" style="margin:0">
+            <img src="/assets/hoodie-back.jpg" width="800" height="1000" alt="A forest green hoodie with an embroidered koi on the back">
+            <span class="tag">Embroidery</span>
+          </figure>
+          <div class="phone">
+            <img src="/assets/app-editor.jpg" width="552" height="1200" alt="The MerchForm editor with a tiger print on a black tee">
+          </div>
+          <figure class="float float-b" style="margin:0">
+            <video src="/assets/spin.mp4" poster="/assets/tee-designer-r1-front.jpg" autoplay muted loop playsinline aria-label="A black tee spinning to show its front and back prints"></video>
+            <span class="tag">Spin video</span>
+          </figure>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>See it in the app</h2>
-      <div class="gallery">
-        <figure><img class="shot" src="/assets/editor.jpg" width="506" height="1100" loading="lazy" alt="Placing artwork on the front of a tee"><figcaption>Place and recolour</figcaption></figure>
-        <figure><img class="shot" src="/assets/finish.jpg" width="506" height="1100" loading="lazy" alt="Choosing a print finish"><figcaption>Pick a finish</figcaption></figure>
-        <figure><img class="shot" src="/assets/hoodie.jpg" width="506" height="1100" loading="lazy" alt="Changing a hoodie's fabric colour by part"><figcaption>Colour every part</figcaption></figure>
-        <figure><img class="shot" src="/assets/library.jpg" width="506" height="1100" loading="lazy" alt="The artwork library"><figcaption>Browse the art library</figcaption></figure>
+    <!-- ============ Garments ============ -->
+    <section class="section" id="garments">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">The garments</span>
+          <h2>Six blanks. <em>Every side</em> printable.</h2>
+          <p class="lede">Front, back and both sleeves, each with its own artwork. Real drape, real fabric texture, any colour.</p>
+        </div>
+        <div class="rail reveal">
+          <figure class="card wide"><img src="/assets/tee-designer-r1-three.jpg" width="800" height="1000" loading="lazy" alt="Black oversized tee with a tiger print, at three quarters"><figcaption><b>Oversized Tee</b><span>Front</span></figcaption></figure>
+          <figure class="card"><img src="/assets/tee-designer-r1-back.jpg" width="800" height="1000" loading="lazy" alt="The back of the black tee with Stay Humble lettering"><figcaption><b>Oversized Tee</b><span>Back</span></figcaption></figure>
+          <figure class="card"><img src="/assets/hoodie-three.jpg" width="800" height="1000" loading="lazy" alt="Green hoodie with a koi on the back"><figcaption><b>Hoodie</b><span>Back</span></figcaption></figure>
+          <figure class="card"><img src="/assets/crew-panel-front.jpg" width="800" height="1000" loading="lazy" alt="Maroon crewneck with a gold puff print sun"><figcaption><b>Crewneck</b><span>Puff</span></figcaption></figure>
+          <figure class="card"><img src="/assets/longsleeve-front.jpg" width="800" height="1000" loading="lazy" alt="White long sleeve tee with a red rose"><figcaption><b>Long Sleeve</b><span>Front + sleeve</span></figcaption></figure>
+          <figure class="card"><img src="/assets/tee-classic-front.jpg" width="800" height="1000" loading="lazy" alt="Sand henley tee with a distressed moth print"><figcaption><b>Henley Tee</b><span>Distressed</span></figcaption></figure>
+          <figure class="card"><img src="/assets/cap-side.jpg" width="800" height="1000" loading="lazy" alt="Navy baseball cap with an embroidered bolt on the side"><figcaption><b>Baseball Cap</b><span>Side</span></figcaption></figure>
+        </div>
       </div>
     </section>
 
-    <section class="cta">
-      <h2>No account. No photoshoot.</h2>
-      <p class="lede" style="margin-left:auto;margin-right:auto">Your designs stay on your phone. Try everything free, then go Pro to export.</p>
-      <!-- TODO: same App Store link as above -->
-      <a class="store-button" href="#">Download on the App Store</a>
+    <!-- ============ Design features ============ -->
+    <section id="design">
+      <div class="wrap">
+        <div class="feature">
+          <div class="feature-media reveal">
+            <div class="phone"><img src="/assets/app-editor.jpg" width="552" height="1200" loading="lazy" alt="Placing a print in the editor"></div>
+          </div>
+          <div class="reveal">
+            <span class="eyebrow">Placement</span>
+            <h2>Put it <em>exactly</em> where it goes.</h2>
+            <p class="lede">Drag, pinch and twist right on the garment. What you see is where it prints.</p>
+            <ul class="ticks">
+              <li><span><b>Snaps to centre</b> so a chest print sits straight, every time.</span></li>
+              <li><span><b>Live size in inches</b>, so you know the real print size.</span></li>
+              <li><span><b>Up to six layers per side</b>: a chest logo, a back graphic and a sleeve mark on one garment.</span></li>
+              <li><span><b>Sliders for size and rotation</b>, and a flat 2D view for precise work.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature flip">
+          <div class="feature-media reveal">
+            <div class="phone"><img src="/assets/app-colour.jpg" width="552" height="1200" loading="lazy" alt="Choosing fabric colours for each part of a hoodie"></div>
+          </div>
+          <div class="reveal">
+            <span class="eyebrow">Colour</span>
+            <h2>Every part, <em>any</em> colour.</h2>
+            <p class="lede">Colour the body, sleeves, hood and pocket separately. Pick from the shades blanks really come in, or match any colour with the eyedropper.</p>
+            <ul class="ticks">
+              <li><span><b>Ten fabric shades</b> from white and bone to forest, navy and maroon.</span></li>
+              <li><span><b>Recolour the artwork too</b>, outline and fill, to match your brand.</span></li>
+              <li><span><b>Studio and photo backdrops</b>, or any plain colour behind the garment.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Finishes ============ -->
+    <section class="section" id="finishes">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Finishes</span>
+          <h2>See the <em>stitch</em>, not just the print.</h2>
+          <p class="lede">Eight finishes rendered on the fabric, with real texture and shine. Show customers the embroidered version before you order a sample.</p>
+        </div>
+        <div class="finish-grid reveal">
+          <figure class="finish"><img src="/assets/finish-print.jpg" width="640" height="640" loading="lazy" alt="Print finish"><figcaption><b>Print</b><span>Flat ink, the standard print</span></figcaption></figure>
+          <figure class="finish"><img src="/assets/finish-embroidery.jpg" width="640" height="640" loading="lazy" alt="Embroidery finish"><figcaption><b>Embroidery</b><span>Stitched in thread</span></figcaption></figure>
+          <figure class="finish"><img src="/assets/finish-puff.jpg" width="640" height="640" loading="lazy" alt="Puff finish"><figcaption><b>Puff</b><span>Raised ink you can feel</span></figcaption></figure>
+          <figure class="finish"><img src="/assets/finish-chenille.jpg" width="640" height="640" loading="lazy" alt="Chenille finish"><figcaption><b>Chenille</b><span>Fuzzy yarn, like a varsity patch</span></figcaption></figure>
+          <figure class="finish"><img src="/assets/finish-foil.jpg" width="640" height="640" loading="lazy" alt="Foil finish"><figcaption><b>Foil</b><span>Shiny metallic ink</span></figcaption></figure>
+          <figure class="finish"><img src="/assets/finish-glitter.jpg" width="640" height="640" loading="lazy" alt="Glitter finish"><figcaption><b>Glitter</b><span>Flecks that sparkle as it turns</span></figcaption></figure>
+          <figure class="finish"><img src="/assets/finish-emboss.jpg" width="640" height="640" loading="lazy" alt="Emboss finish"><figcaption><b>Emboss</b><span>Pressed into the fabric, no ink</span></figcaption></figure>
+          <figure class="finish"><img src="/assets/finish-distressed.jpg" width="640" height="640" loading="lazy" alt="Distressed finish"><figcaption><b>Distressed</b><span>Worn, cracked ink for a vintage look</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Art library ============ -->
+    <section>
+      <div class="wrap">
+        <div class="feature">
+          <div class="feature-media reveal">
+            <div class="phone"><img src="/assets/app-library.jpg" width="552" height="1200" loading="lazy" alt="The artwork library"></div>
+          </div>
+          <div class="reveal">
+            <span class="eyebrow">Artwork</span>
+            <h2>No design yet? <em>Start here.</em></h2>
+            <p class="lede">A library of 89 pieces across tattoo flash, animals, Japanese, nature, mystic, street and lettering. Every piece recolours in a tap. Or bring your own: any photo or logo, and type in eight fonts.</p>
+            <div class="art-grid">
+              <div class="art"><img src="/assets/art/dragon.png" alt="Dragon" loading="lazy"></div>
+              <div class="art dark"><img src="/assets/art/skull.png" alt="Skull" loading="lazy"></div>
+              <div class="art sand"><img src="/assets/art/ichigo-ichie.png" alt="Japanese lettering: once in a lifetime" loading="lazy"></div>
+              <div class="art"><img src="/assets/art/eagle.png" alt="Eagle" loading="lazy"></div>
+              <div class="art sand"><img src="/assets/art/koi.png" alt="Koi" loading="lazy"></div>
+              <div class="art"><img src="/assets/art/la-carpe-diem.png" alt="Carpe Diem lettering" loading="lazy"></div>
+              <div class="art dark"><img src="/assets/art/moth-flash.png" alt="Moth" loading="lazy"></div>
+              <div class="art"><img src="/assets/art/sun-face.png" alt="Sun" loading="lazy"></div>
+            </div>
+            <p class="small" style="margin-top:14px">Lettering in Japanese, Chinese, Korean, Arabic, Hindi and Latin is set in real fonts, and the app tells you what each one says.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Exports ============ -->
+    <section class="section" id="exports">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Exports</span>
+          <h2>Everything you need <em>to sell it.</em></h2>
+          <p class="lede">One design becomes a product page, a print order and a week of posts.</p>
+        </div>
+        <div class="export-grid reveal">
+          <div class="export-card video">
+            <video src="/assets/spin.mp4" poster="/assets/tee-designer-r1-front.jpg" autoplay muted loop playsinline aria-label="A seamless spin video of a tee"></video>
+            <div>
+              <span class="k">Social video</span>
+              <p class="display">Vertical, ready to post.</p>
+              <p>9:16 at 1080 &times; 1920, made for Reels, TikTok and Shorts.</p>
+              <div class="chips"><span>Spin</span><span>Reveal</span><span>Colourways</span><span>Flip</span></div>
+            </div>
+          </div>
+          <div class="export-card">
+            <span class="k">4K image</span>
+            <p class="display">Product photos.</p>
+            <p>4096 &times; 4096 stills for your store, with the backdrop or transparent.</p>
+          </div>
+          <div class="export-card">
+            <span class="k">Listing kit</span>
+            <p class="display">Seven shots, one tap.</p>
+            <p>Front, back, 3/4, a close-up, a colourway grid, a 4:5 post and a 9:16 story, saved to Photos.</p>
+          </div>
+          <div class="export-card">
+            <span class="k">Print file</span>
+            <p class="display">Print-ready at 300 dpi.</p>
+            <p>A transparent PNG for every printed side, at its real size, with a spec of where it sits. Upload it straight to your printer or print-on-demand store.</p>
+            <div class="checker"><img src="/assets/art/rose-flash.png" alt="A transparent print file" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Your work, your phone ============ -->
+    <section>
+      <div class="wrap">
+        <div class="feature flip">
+          <div class="feature-media reveal">
+            <div class="phone"><img src="/assets/app-projects.jpg" width="552" height="1200" loading="lazy" alt="A grid of saved designs"></div>
+          </div>
+          <div class="reveal">
+            <span class="eyebrow">Your work</span>
+            <h2>No account. <em>No cloud.</em></h2>
+            <p class="lede">Every design saves as you go and stays on your phone. Open the app and start; there&rsquo;s nothing to sign up for.</p>
+            <ul class="ticks">
+              <li><span><b>Free to design</b> on the Oversized Tee with your own art, every colour, Print and Puff.</span></li>
+              <li><span><b>Pro unlocks the rest</b>: every garment, font, finish, backdrop and library piece, and all exports.</span></li>
+              <li><span><b>Pay weekly, yearly or once</b>, with Restore and Manage Subscription always one tap away.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Closing ============ -->
+    <section class="wrap">
+      <div class="closing reveal">
+        <div class="closing-copy">
+          <span class="eyebrow">MerchForm</span>
+          <h2>Make it look <em>sold out</em> before you print one.</h2>
+          <p class="lede">Free on the App Store, for iPhone.</p>
+          <!-- TODO: App Store link -->
+          <a class="btn btn-ember" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/></svg>
+            Download on the App Store
+          </a>
+        </div>
+        <div class="closing-media">
+          <img src="/assets/hoodie-back.jpg" width="800" height="1000" loading="lazy" alt="Green hoodie, koi on the back">
+          <img src="/assets/crew-panel-front.jpg" width="800" height="1000" loading="lazy" alt="Maroon crewneck with a gold sun">
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>&copy; 2026 MerchForm</span>
+      <a class="brand" href="/">MerchForm</a>
       <nav>
         <a href="/privacy">Privacy Policy</a>
         <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
         <a href="/support">Support</a>
       </nav>
+      <span>&copy; 2026 MerchForm</span>
     </div>
   </footer>
+
+  <script>
+    // Fade sections in as they arrive. Without this script everything is simply visible.
+    (function () {
+      var items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { items.forEach(function (el) { el.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
 </body>
 </html>

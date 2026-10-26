@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support: MerchForm</title>
   <meta name="description" content="Get help with MerchForm.">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="light">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#F5F1EA">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -16,19 +18,26 @@
     <div class="wrap">
       <a class="brand" href="/">MerchForm</a>
       <nav>
-        <a href="/privacy">Privacy</a>
-        <a href="/support" aria-current="page">Support</a>
+        <span class="nav-links">
+          <a href="/#design">Design</a>
+          <a href="/#finishes">Finishes</a>
+          <a href="/#exports">Exports</a>
+          <a href="/support">Support</a>
+        </span>
+        <!-- TODO: App Store link (3 places on this page) -->
+        <a class="btn btn-ink btn-small" href="#">Get the app</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap doc">
+    <span class="eyebrow">Help</span>
     <h1>Support</h1>
     <p class="lede">Questions, bugs or ideas: email us and a real person will reply.</p>
 
     <div class="contact-card">
-      <a href="mailto:jamalhas378@gmail.com?subject=MerchForm%20support">jamalhas378@gmail.com</a>
-      <p class="muted">Tip: in the app, Settings &gt; Contact Support fills in your app version and device for you.</p>
+      <a class="mail" href="mailto:jamalhas378@gmail.com?subject=MerchForm%20support">jamalhas378@gmail.com</a>
+      <p class="small">Tip: in the app, Settings &gt; Contact Support fills in your app version and device for you.</p>
     </div>
 
     <h2>Common questions</h2>
@@ -62,12 +71,13 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>&copy; 2026 MerchForm</span>
+      <a class="brand" href="/">MerchForm</a>
       <nav>
         <a href="/privacy">Privacy Policy</a>
         <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
         <a href="/support">Support</a>
       </nav>
+      <span>&copy; 2026 MerchForm</span>
     </div>
   </footer>
 </body>
