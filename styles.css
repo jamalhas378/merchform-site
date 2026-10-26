@@ -1,0 +1,125 @@
+/* MerchForm site. Tokens match the app's MFColor. Ember is a fill, never text. */
+:root {
+  --canvas: #F5F1EA;
+  --surface: #E8E1D5;
+  --hairline: #CFC6B8;
+  --text: #12100E;
+  --text-2: #6B655C;
+  --ember: #FF5A1F;
+  --ink: #12100E;
+  --display: "Instrument Serif", Georgia, serif;
+  --ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #1C1A17;
+    --surface: #2A2724;
+    --hairline: #3A352F;
+    --text: #F5F1EA;
+    --text-2: #9A9288;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--text);
+  font: 17px/1.55 var(--ui);
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+/* Header and footer, the same on every page */
+.site-header { border-bottom: 1px solid var(--hairline); }
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; min-height: 64px; flex-wrap: wrap;
+}
+.brand { font: 30px/1 var(--display); text-decoration: none; }
+.site-header nav { display: flex; gap: 20px; font-size: 15px; }
+.site-header nav a, .site-footer a { text-decoration: none; color: var(--text-2); }
+.site-header nav a:hover, .site-footer a:hover { color: var(--text); }
+.site-header nav a[aria-current] { color: var(--text); }
+
+.site-footer { border-top: 1px solid var(--hairline); margin-top: 72px; }
+.site-footer .wrap {
+  display: flex; flex-wrap: wrap; justify-content: space-between;
+  gap: 12px; padding-top: 24px; padding-bottom: 40px;
+  font-size: 14px; color: var(--text-2);
+}
+.site-footer nav { display: flex; flex-wrap: wrap; gap: 20px; }
+
+/* Type */
+h1, h2 { font-family: var(--display); font-weight: 400; letter-spacing: -0.01em; }
+h1 { font-size: 48px; line-height: 1.05; margin: 0 0 16px; }
+h2 { font-size: 34px; line-height: 1.1; margin: 0 0 12px; }
+h3 { font-size: 18px; margin: 0 0 6px; }
+.lede { font-size: 19px; color: var(--text-2); max-width: 34em; margin: 0 0 28px; }
+.muted { color: var(--text-2); }
+
+/* Hero */
+.hero { padding: 48px 0 24px; display: grid; gap: 40px; align-items: center; }
+.hero .shot { max-width: 300px; margin: 0 auto; }
+
+/* App Store button: Ember fill, Ink text */
+.store-button {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--ember); color: var(--ink);
+  font-weight: 600; font-size: 17px; text-decoration: none;
+  padding: 14px 24px; border-radius: 999px;
+}
+.store-button svg { width: 20px; height: 20px; fill: currentColor; }
+.store-note { font-size: 14px; color: var(--text-2); margin-top: 12px; }
+
+/* Phone screenshots */
+.shot {
+  border-radius: 28px; overflow: hidden;
+  border: 1px solid var(--hairline);
+  box-shadow: 0 12px 40px rgba(18, 16, 14, 0.12);
+}
+
+/* Features */
+.section { padding: 56px 0 0; }
+.features { display: grid; gap: 16px; margin-top: 28px; }
+.feature {
+  background: var(--surface); border-radius: 18px; padding: 22px;
+}
+.feature p { margin: 0; color: var(--text-2); font-size: 16px; }
+
+/* Screenshot strip: scrolls sideways on a phone, sits in a row on wider screens */
+.gallery {
+  display: grid; grid-auto-flow: column; grid-auto-columns: 62%;
+  gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding: 8px 20px 24px; margin: 28px -20px 0;
+}
+.gallery figure { margin: 0; scroll-snap-align: center; }
+.gallery figcaption { font-size: 14px; color: var(--text-2); margin-top: 10px; text-align: center; }
+
+.cta { text-align: center; padding-top: 64px; }
+
+/* Long-form pages */
+.doc { max-width: 720px; padding-top: 48px; }
+.doc h2 { font-size: 28px; margin-top: 40px; }
+.doc ul { padding-left: 22px; }
+.doc li { margin-bottom: 8px; }
+.faq details {
+  border-bottom: 1px solid var(--hairline); padding: 16px 0;
+}
+.faq summary { cursor: pointer; font-weight: 600; }
+.faq p { margin: 10px 0 0; color: var(--text-2); }
+.contact-card {
+  background: var(--surface); border-radius: 18px; padding: 24px; margin: 24px 0 8px;
+}
+.contact-card a { font-size: 20px; font-weight: 600; }
+
+@media (min-width: 760px) {
+  h1 { font-size: 68px; }
+  h2 { font-size: 42px; }
+  .hero { grid-template-columns: 1.2fr 1fr; padding-top: 72px; }
+  .features { grid-template-columns: repeat(3, 1fr); }
+  .gallery { grid-auto-flow: row; grid-template-columns: repeat(4, 1fr); overflow: visible; margin: 28px 0 0; padding: 8px 0 0; }
+}
